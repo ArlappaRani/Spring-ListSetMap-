@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.spring.listsetmapdatamembers.SpringProject4.Employeedm" id="emp">
+
+<property name="technologies">
+   <list>
+      <value>Java</value>
+      <value>Python</value>
+      <value>SQL</value>
+   </list>
+</property>
+
+<property name="projects">
+<set>
+    <value>Project_1</value>
+    <value>Project_2</value>
+    <value>Project_3</value>
+</set>
+</property>
+
+<property name="companies">
+<map>
+<entry key="1" value="Techmahindra"></entry>
+<entry key="2" value="TCS"></entry>
+</map>
+</property>
+
+</bean>
+
+
+
+</beans>
